@@ -11,7 +11,7 @@ if(!isMenuOpen) return null
             <li className=' hover:bg-gray-200 hover:rounded-md'>Home</li>
             <li className=' hover:bg-gray-200 hover:rounded-md'>Shorts</li>
             <li className=' hover:bg-gray-200 hover:rounded-md'>Subscription</li>
-            <hr class="h-px w-30  border-0 dark:bg-gray-400"/>
+            <hr class="h-px w-32  border-0 dark:bg-gray-400"/>
 
         </ul>
         <h1 className='w-96 font-bold'>You ></h1>

@@ -8,8 +8,19 @@ export const userLogo = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhC
 
 
 
-  const GOOGLE_API_KEY = "AIzaSyCEnXLsGBgAUso24r2G4mYesBPU64CjUi0"
+  export const GOOGLE_API_KEY = 
+  "AIzaSyCnr_9peEQPEu6odEfd_hMm_CMD-wViHuA"
 
   export const YOUTUBE_VIDEOS_API =
   "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&maxResults=50&key=" +
   GOOGLE_API_KEY;
+
+  export const YOUTUBE_GET_VIDEO_BY_ID = 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=';
+
+  export const YOUTUBE_SEARCH_API =  "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+
+
+
+
+
+  
