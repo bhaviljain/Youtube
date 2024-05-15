@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { GOOGLE_API_KEY, HamburgerMenu, YOUTUBE_SEARCH_API, userLogo } from '../Contants/utils'
+import { HamburgerMenu, YOUTUBE_SEARCH_API, userLogo } from '../Contants/utils'
 import { youtubeLogo } from '../Contants/utils'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleMenu } from '../Redux/appSlice'
-import { Link, json } from 'react-router-dom'
 import { cacheResults } from '../Redux/SearchSlice'
 
 const Head = () => {
