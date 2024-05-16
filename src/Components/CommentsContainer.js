@@ -123,7 +123,7 @@ import { userLogo } from '../Contants/utils';
    <div>
 <Comment key={index} data={comment}/>
 <div className='ml-5  border-l-2 border-black'>
-    <CommentList comments={comment.replies }/>
+    <CommentList key={index} comments={comment.replies }/>
     </div>
 </div>
 

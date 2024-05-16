@@ -17,9 +17,9 @@ export const userLogo = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhC
 
   export const YOUTUBE_GET_VIDEO_BY_ID = 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=';
 
-  export const YOUTUBE_SEARCH_API =  "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+  export const YOUTUBE_SEARCH_API = "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
-
+export const offSet_live_Chat = 10;
 
 
 

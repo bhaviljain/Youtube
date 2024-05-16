@@ -21,7 +21,7 @@ const Head = () => {
         const data =await fetch(YOUTUBE_SEARCH_API  + searchQuery)
         const res = await data.json()
         setSuggestion(res[1])
-        console.log(res);
+        // console.log(res);
         dispatch(cacheResults(
             {
                 [searchQuery] : res[1]
@@ -71,13 +71,13 @@ const Head = () => {
                 onBlur={()=>setShowSuggestion(false)}
                 onChange={(e)=>setSearchQuery(e.target.value)}
                 
-                className=' border border-black  w-1/2 rounded-l-full py-1.5 hover:border-blue-600'
+                className=' border border-black  w-1/2 rounded-l-full py-1.5 hover:border-blue-600 px-2 z-50'
                 value={searchQuery}
                 />
                 <button className='border border-black py-1.5 px-2 bg-gray-200 rounded-r-full'>🔍</button>
             </div>
-            {showSuggestion && <div className='fixed left-[33%] w-[27rem] mt-12 bg-zinc-200 rounded-lg'>
-                <ul className='flex flex-col gap-4 '>
+            {showSuggestion && <div className='fixed left-[33%] w-[27rem] mt-12 bg-zinc-200 rounded-lg z-50'>
+                <ul className='flex flex-col gap-4'>
                    {suggestion && suggestion.map((s)=>{
                     return(
                         <li className='hover:bg-gray-300 cursor-pointer'>🔍{s}</li>
